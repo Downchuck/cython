@@ -233,6 +233,10 @@
   #ifndef CYTHON_UPDATE_DESCRIPTOR_DOC
     #define CYTHON_UPDATE_DESCRIPTOR_DOC 0
   #endif
+  #ifndef PyTuple_GET_ITEM
+    #define PyTuple_GET_ITEM PyTuple_GetItem
+  #endif
+
 
 #elif defined(PY_NOGIL)
   #define CYTHON_COMPILING_IN_PYPY 0
